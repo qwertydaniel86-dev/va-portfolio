@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="styles.css"></head><body>
 <nav><div class="wrap"><a class="logo" href="#top">Daniel<span>.</span>Soriano</a>
 <div class="links"><a href="#about">About</a><a href="#services">Services</a><a href="#why">Why me</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div>
-<a class="btn pri sm" href="mailto:qwertydaniel86@gmail.com">Hire me</a></div></nav>
+<a class="btn pri sm" href="#contact">Hire me</a></div></nav>
 
 <header class="hero" id="top"><div class="wrap">
 <div class="reveal"><span class="eyebrow">Senior Virtual Assistant · La Union, Philippines</span>
@@ -85,8 +85,15 @@
 <section class="contact" id="contact"><div class="wrap"><div class="card reveal">
 <span class="eyebrow">06 · Contact</span><h2>Ready when you are.</h2>
 <p class="lead" style="margin:auto">Tell me what's taking up your time. I'll reply with a clear plan to take it off your plate.</p>
-<a class="mail" href="mailto:qwertydaniel86@gmail.com?subject=VA%20inquiry">qwertydaniel86@gmail.com</a><br>
-<a class="btn pri" href="mailto:qwertydaniel86@gmail.com?subject=VA%20inquiry">Send a message →</a>
+<form id="cform" class="cform" novalidate>
+<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+<div class="frow"><label>Name<input name="name" required maxlength="100" autocomplete="name"></label>
+<label>Email<input name="email" type="email" required maxlength="150" autocomplete="email"></label></div>
+<label>Message<textarea name="message" required rows="5" maxlength="3000" placeholder="What do you need help with?"></textarea></label>
+<button class="btn pri" type="submit">Send a message →</button>
+<p id="cstatus" class="cstatus" role="status"></p>
+</form>
+<p style="margin-top:14px;color:var(--mut);font-size:.9rem">Or email me directly at <a href="mailto:qwertydaniel86@gmail.com?subject=VA%20inquiry">qwertydaniel86@gmail.com</a></p>
 <p style="margin-top:22px;color:var(--mut)">Based in La Union, Philippines (UTC+8). References available on request.</p>
 </div></div></section>
 <footer>© <span id="yr"></span> Daniel Soriano · Senior Virtual Assistant</footer>
