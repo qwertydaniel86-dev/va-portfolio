@@ -2,7 +2,7 @@
 <title>Daniel Soriano | Senior Virtual Assistant</title>
 <meta name="description" content="Daniel Soriano: senior Virtual Assistant for executive, real estate and medical admin support. A military air battle manager's discipline, applied to your business.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css"></head><body>
+<link rel="stylesheet" href="styles.css?v=3"></head><body>
 <nav><div class="wrap"><a class="logo" href="#top">Daniel<span>.</span>Soriano</a>
 <div class="links"><a href="#about">About</a><a href="#services">Services</a><a href="#why">Why me</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div>
 <a class="btn pri sm" href="#contact">Hire me</a></div></nav>
@@ -85,16 +85,18 @@
 <section class="contact" id="contact"><div class="wrap"><div class="card reveal">
 <span class="eyebrow">06 · Contact</span><h2>Ready when you are.</h2>
 <p class="lead" style="margin:auto">Tell me what's taking up your time. I'll reply with a clear plan to take it off your plate.</p>
-<form id="cform" class="cform" novalidate>
+<form id="cform" class="cform" novalidate aria-label="Contact form">
 <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
-<div class="frow"><label>Name<input name="name" required maxlength="100" autocomplete="name"></label>
-<label>Email<input name="email" type="email" required maxlength="150" autocomplete="email"></label></div>
-<label>Message<textarea name="message" required rows="5" maxlength="3000" placeholder="What do you need help with?"></textarea></label>
-<button class="btn pri" type="submit">Send a message →</button>
-<p id="cstatus" class="cstatus" role="status"></p>
+<div class="frow"><label>Name<input name="name" required maxlength="100" autocomplete="name" placeholder="Your full name"></label>
+<label>Email<input name="email" type="email" required maxlength="150" autocomplete="email" placeholder="you@company.com"></label></div>
+<label>I need help with<select name="service"><option>Executive / General VA</option><option>Real Estate VA</option><option>Medical Admin VA</option><option>Something else</option></select></label>
+<label>Message<textarea name="message" required rows="5" maxlength="3000" placeholder="Tell me about the tasks, tools, and hours you have in mind."></textarea><span class="count"><span id="ccount">0</span>/3000</span></label>
+<button class="btn pri" type="submit">Send message →</button>
+<p id="cstatus" class="cstatus" role="status" aria-live="polite"></p>
 </form>
+<div id="cdone" class="cdone" hidden><div class="tick">✓</div><h3>Message sent</h3><p>Thanks for reaching out. I usually reply within 24 hours (UTC+8).</p><button type="button" class="btn ghost" id="cagain">Send another message</button></div>
 <p style="margin-top:14px;color:var(--mut);font-size:.9rem">Or email me directly at <a href="mailto:qwertydaniel86@gmail.com?subject=VA%20inquiry">qwertydaniel86@gmail.com</a></p>
 <p style="margin-top:22px;color:var(--mut)">Based in La Union, Philippines (UTC+8). References available on request.</p>
 </div></div></section>
 <footer>© <span id="yr"></span> Daniel Soriano · Senior Virtual Assistant</footer>
-<script src="script.js"></script></body></html>
+<script src="script.js?v=3"></script></body></html>
